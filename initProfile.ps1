@@ -58,9 +58,9 @@ function tf(){
 }
 
 
-$editorOfChoice = Coalesce-Paths (Find-Program 'vim\vim73\vim.exe') Find-Program 'Notepad++\notepad++.exe'
+$editorOfChoice = Coalesce-Paths Find-Program 'Notepad++\notepad++.exe'
 
-if($editorOfChoice)
+if($editorOfChoice)
 {
     set-alias notepad $editorOfChoice
     set-alias edit $editorOfChoice
@@ -69,7 +69,7 @@ if($editorOfChoice)
 
 
 
-if($error.Count -eq 0)
-{ 
-	cls
+if($error.Count -eq 0)
+{ 
+	cls
 }
